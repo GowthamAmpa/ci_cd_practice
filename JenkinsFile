@@ -1,0 +1,14 @@
+pipeline{
+    
+    agent any
+    
+    stages{
+        stage ('check docker'){
+            steps {
+                sh 'docker version'
+                // sh "echo helo world!"
+            }
+        }
+    }
+    
+}
